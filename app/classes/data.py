@@ -97,3 +97,5 @@ class Clinic(Document):
     meta = {
         'ordering': ['-createdate']
     }
+
+    role = StringField()

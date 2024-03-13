@@ -50,3 +50,5 @@ class ClinicForm(FlaskForm):
     zipcode = StringField('Zipcode',validators=[DataRequired()])
     description = StringField('Description', validators=[DataRequired()])
     submit = SubmitField('Submit')
+
+    role = SelectField('Role',choices=[("Teacher","Teacher"),("Student","Student")])
